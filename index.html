@@ -319,7 +319,7 @@ function showQuestion(index) {
       explanationDiv.classList.add('show');
 
       // After the explanation has appeared (2.0s delay + 0.6s anim = ~2.6s), move on
-      const timeToNext = 3800; // a tiny buffer so the animation completes nicely
+      const timeToNext = 3000; // a tiny buffer so the animation completes nicely
       if (index + 1 < quiz.length) {
         setTimeout(() => showQuestion(index + 1), timeToNext);
       } else {
