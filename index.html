@@ -11,7 +11,6 @@
     padding: 20px;
     color: #2c2c2c;
 }
-
 .language-switch {
   display: inline-block;
   padding: 8px 16px;
@@ -25,29 +24,25 @@
 .language-switch:hover {
   background-color: #444;
 }
-
-  .quiz-container {
+.quiz-container {
     max-width: 700px;
     margin:0 auto;
     background-color: #ffffff;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  }
-
-  h2 {
+}
+h2 {
     text-align: center;
     font-size: 2em;
     color: #d35400;
-  }
-
-  .question {
+}
+.question {
     font-weight: bold;
     margin-top: 25px;
     font-size: 1.1em;
-  }
-
-  .options button {
+}
+.options button {
     display: block;
     color: white;
     margin: 8px 0;
@@ -58,26 +53,23 @@
     background-color: #857C31;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-size: 1.1em; /* desktop default */
-  }
-
-  .options button:hover {
+    font-size: 1.1em;
+}
+.options button:hover {
     background-color: #C5B001;
-  }
-
-  .explanation {
+}
+.explanation {
     color: #006400;
     margin-top: 10px;
     font-style: italic;
-  }
-
-  .banner {
+}
+.banner {
     width: 100%;
     max-height: 200px;
     object-fit: cover;
     margin-bottom: 20px;
     border-radius: 8px;
-  }
+}
 #score {
   position: sticky;
   top: 0;
@@ -107,38 +99,34 @@
 .return-button:hover {
   background-color: #b5303c;
 }
-
 .footer {
   margin: 40px auto 0;
   text-align: center;
   font-size: 0.95em;
   max-width: 768px;
   color: #444;
-  }
-  .footer a {
+}
+.footer a {
     color: #9C2831;
     text-decoration: none;
-  }
- 
-  .footer a:hover {
+}
+.footer a:hover {
     text-decoration: underline;
-  }
-  @media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 768px) {
     .options button {
        font-size: 1em;
        padding: 14px;
        line-height: 1.3;
-}
-
-  .return-button {
-    font-size: 0.9em;
-    padding: 12px 16px;
-    max-width: 90%;
-    margin: 20px auto;
-    text-align: center;
+    }
+    .return-button {
+      font-size: 0.9em;
+      padding: 12px 16px;
+      max-width: 90%;
+      margin: 20px auto;
+      text-align: center;
     }
 }
- 
 </style>
 </head>
 
@@ -146,165 +134,167 @@
   <div class="quiz-container">
     <img src="September Quiz Banner.jpg" alt="September Quiz Banner" class="banner">
 
-<a href="#" class="language-switch" target="_blank" rel="noopener noreferrer">עברית</a>
+    <a href="#" class="language-switch" target="_blank" rel="noopener noreferrer">עברית</a>
 
     <h2>Larry and Mindy's September Quiz<br>
       Musical Journeys of the 60s & 70s</h2>
     <p id="score">Correct answers (out of 15): 0</p>
     <div id="quiz"></div>
-<a href="https://quiz.larrymindy.com/09-2025.php" class="return-button" target="_blank" rel="noopener noreferrer">
-  Back to the introduction page<br>and previous quizzes
-</a>
+
+    <a href="https://quiz.larrymindy.com/09-2025.php" class="return-button" target="_blank" rel="noopener noreferrer">
+      Back to the introduction page<br>and previous quizzes
+    </a>
     <img src="divider H-C.jpg" alt="divider H-C.jpg" class="banner">
 
-<div class="footer">
-  <p><strong style="color: #9C2831; font-size: 1.1em;">Contact Us</strong><br>
-    054-6446396 / 050-5921628<br>
-    <a href="mailto:larry@larryandmindy.co.il?subject=E-mail from the Larry and Mindy website" style="color: #9C2831;">larry@larryandmindy.co.il</a><br>
-    or<br>
-    <a href="mailto:mindy@larryandmindy.co.il?subject=E-mail from the Larry and Mindy website" style="color: #9C2831;">mindy@larryandmindy.co.il</a>
-  </p>
-  <p>
-    <a href="http://www.larrymindy.com/" target="_blank" style="color: #9C2831; font-weight: bold;">Visit our main website</a>
-  </p>
-</div>
-
-
+    <div class="footer">
+      <p><strong style="color: #9C2831; font-size: 1.1em;">Contact Us</strong><br>
+        054-6446396 / 050-5921628<br>
+        <a href="mailto:larry@larryandmindy.co.il?subject=E-mail from the Larry and Mindy website" style="color: #9C2831;">larry@larryandmindy.co.il</a><br>
+        or<br>
+        <a href="mailto:mindy@larryandmindy.co.il?subject=E-mail from the Larry and Mindy website" style="color: #9C2831;">mindy@larryandmindy.co.il</a>
+      </p>
+      <p>
+        <a href="http://www.larrymindy.com/" target="_blank" style="color: #9C2831; font-weight: bold;">Visit our main website</a>
+      </p>
+    </div>
   </div>
 
-  <script>
- const quiz = [
+<script>
+const quiz = [
   {
     question: "Which U.S. state is the destination in the song “Take Me Home, Country Roads”?",
-    options: ['Tennessee', 'Kentucky', 'West Virginia', 'Virginia'],
+    options: ["Tennessee", "Kentucky", "West Virginia", "Virginia"],
     answer: 2,
     explanation: "John Denver’s classic celebrates West Virginia’s mountains and rural beauty—it became the state’s anthem."
   },
   {
     question: "Which Beatles song begins with the line “Flew in from Miami Beach BOAC”?",
-    options: ['Back in the U.S.S.R.', 'Come Together', 'Ticket to Ride', 'Day Tripper'],
+    options: ["Back in the U.S.S.R.", "Come Together", "Ticket to Ride", "Day Tripper"],
     answer: 0,
     explanation: "‘Back in the U.S.S.R.’ opens The White Album with a parody of Chuck Berry and the Beach Boys."
   },
   {
     question: "What Simon & Garfunkel song mentions traveling on a Greyhound bus?",
-    options: ['The Boxer', 'America', 'Homeward Bound', 'Cecilia'],
+    options: ["The Boxer", "America", "Homeward Bound", "Cecilia"],
     answer: 1,
     explanation: "Paul Simon wrote ‘America’ as a metaphor for searching meaning—its Greyhound bus journey is literal and symbolic."
   },
   {
     question: "Jimmy Webb wrote a song for Glen Campbell featuring a telephone-wire technician. Which city did the technician work in (and around)?",
-    options: ['Wichita, Kansas', 'Tulsa, Oklahoma', 'Amarillo, Texas', 'Des Moines, Iowa'],
+    options: ["Wichita, Kansas", "Tulsa, Oklahoma", "Amarillo, Texas", "Des Moines, Iowa"],
     answer: 0,
     explanation: "Jimmy Webb’s ‘Wichita Lineman’ immortalized a lonely technician in Kansas, blending country with orchestral pop."
   },
   {
     question: "Which song by The Beach Boys celebrates driving across America in a custom car, with car parts described?",
-    options: ['I Get Around', 'Surfin’ U.S.A.', 'Little Deuce Coupe', 'Fun, Fun, Fun'],
+    options: ["I Get Around", "Surfin’ U.S.A.", "Little Deuce Coupe", "Fun, Fun, Fun"],
     answer: 2,
-    explanation: "‘Little Deuce Coupe’ is the Beach Boys’ ode to a souped‑up Ford hot rod—pure car culture in song."
+    explanation: "‘Little Deuce Coupe’ is the Beach Boys’ ode to a souped-up Ford hot rod—pure car culture in song."
   },
   {
     question: "What song by Neil Diamond includes the lyric “LA’s fine, the sun shines most the time”?",
-    options: ['Cracklin’ Rosie', 'I Am... I Said', 'Sweet Caroline', 'Song Sung Blue'],
+    options: ["Cracklin’ Rosie", "I Am... I Said", "Sweet Caroline", "Song Sung Blue"],
     answer: 1,
     explanation: "‘I Am... I Said’ reflects Neil Diamond’s homesickness and career struggles while living in Los Angeles."
   },
   {
     question: "Which song by Johnny Cash lists dozens of cities he’s been to (over 90 cities!)?",
-    options: ['Riders in the Sky', 'I’ve Been Everywhere', 'I Walk the Line', 'A Boy Named Sue'],
+    options: ["Riders in the Sky", "I’ve Been Everywhere", "I Walk the Line", "A Boy Named Sue"],
     answer: 1,
-    explanation: "Johnny Cash’s cover of ‘I’ve Been Everywhere’ rattles off nearly 100 towns in rapid‑fire storytelling style."
+    explanation: "Johnny Cash’s cover of ‘I’ve Been Everywhere’ rattles off nearly 100 towns in rapid-fire storytelling style."
   },
   {
     question: "Who wrote the song “City of New Orleans”, describing a train ride from Chicago to New Orleans on the Illinois Central Railroad?",
-    options: ['Arlo Guthrie', 'Willie Nelson', 'Steve Goodman', 'Johnny Cash'],
+    options: ["Arlo Guthrie", "Willie Nelson", "Steve Goodman", "Johnny Cash"],
     answer: 2,
-    explanation: "Steve Goodman wrote ‘City of New Orleans’—Arlo Guthrie popularized it; it became a folk‑country standard."
+    explanation: "Steve Goodman wrote ‘City of New Orleans’—Arlo Guthrie popularized it; it became a folk-country standard."
   },
   {
     question: "What song by The Doors includes the lyric “Well, I woke up this mornin' / And I got myself a beer / The future's uncertain / And the end is always near” and evokes a road trip vibe?",
-    options: ['Been Down So Long', 'Riders on the Storm', 'L.A. Woman', 'Roadhouse Blues'],
+    options: ["Been Down So Long", "Riders on the Storm", "L.A. Woman", "Roadhouse Blues"],
     answer: 3,
     explanation: "‘Roadhouse Blues’ by The Doors is a gritty anthem of freedom and unpredictability on the open road."
   },
   {
-    question: "Sung by Gordon Lightfoot, where is "The Wreck of the Edmund Fitzgerald"?",
-    options: ['Atlantic Ocean', 'Lake Superior', 'Hudson Bay', 'Gulf of St. Lawrence'],
+    question: "Sung by Gordon Lightfoot, where is \"The Wreck of the Edmund Fitzgerald\"?",
+    options: ["Atlantic Ocean", "Lake Superior", "Hudson Bay", "Gulf of St. Lawrence"],
     answer: 1,
     explanation: "Gordon Lightfoot told the true story of the Edmund Fitzgerald sinking on Lake Superior in 1975."
   },
   {
     question: "What song by Led Zeppelin includes references to traveling “on a midnight sun” and “the land of the ice and snow”?",
-    options: ['Kashmir', 'Immigrant Song', 'Ramble On', 'Over the Hills and Far Away'],
+    options: ["Kashmir", "Immigrant Song", "Ramble On", "Over the Hills and Far Away"],
     answer: 1,
     explanation: "Led Zeppelin’s ‘Immigrant Song’ evokes Viking voyages with its references to northern lands and conquest."
   },
   {
     question: "What song sung by Janis Joplin talks about hitchhiking?",
-    options: ['Piece of My Heart', 'Me and Bobby McGee', 'Cry Baby', 'Summertime'],
+    options: ["Piece of My Heart", "Me and Bobby McGee", "Cry Baby", "Summertime"],
     answer: 1,
-    explanation: "Janis Joplin’s ‘Me and Bobby McGee’ captures a free‑spirited road romance; it became her signature hit."
+    explanation: "Janis Joplin’s ‘Me and Bobby McGee’ captures a free-spirited road romance; it became her signature hit."
   },
   {
     question: "What song by The Band includes the lyric “Was feeling 'bout half past dead / I just need someplace / Where I can lay my head” and depicts the travels of a man through Nazareth, Pennsylvania?",
-    options: ['The Night They Drove Old Dixie Down', 'Life Is a Carnival', 'The Weight', 'Up on Cripple Creek'],
+    options: ["The Night They Drove Old Dixie Down", "Life Is a Carnival", "The Weight", "Up on Cripple Creek"],
     answer: 2,
     explanation: "The Band’s ‘The Weight’ narrates a traveler’s encounters in Nazareth, Pennsylvania—an allegory of burden and grace."
   },
   {
     question: "What song by Billy Joel includes references to traveling through the Bronx and Long Island?",
-    options: ['Piano Man', 'Movin’ Out (Anthony’s Song)', 'Scenes from an Italian Restaurant', 'New York State of Mind'],
+    options: ["Piano Man", "Movin’ Out (Anthony’s Song)", "Scenes from an Italian Restaurant", "New York State of Mind"],
     answer: 3,
     explanation: "Billy Joel’s ‘New York State of Mind’ is a love letter to his city, contrasting travel with staying home."
   },
   {
-    question: "Who wrote the song "Walking on a Country Road"?",
-    options: ['James Taylor', 'John Denver', 'Jim Croce', 'Cat Stevens'],
-    answer: 0,
+    question: "Who wrote the song \"Walking on a Country Road\"?",
+    options: ["James Taylor", "John Denver", "Jim Croce", "Cat Stevens"],
+    answer: 1,
     explanation: "John Denver’s ‘Walking on a Country Road’ celebrates simplicity, nature, and the peaceful escape of rural life."
-  },
- ];
-    // ✅ Rendering logic
-    const quizDiv = document.getElementById('quiz');
+  }
+];
+
+const quizDiv = document.getElementById('quiz');
 let score = 0;
 const scoreDisplay = document.getElementById('score');
-    quiz.forEach((q, index) => {
-      const questionDiv = document.createElement('div');
-      questionDiv.className = 'question';
-      questionDiv.textContent = `${index + 1}. ${q.question}`;
 
-      const optionsDiv = document.createElement('div');
-      optionsDiv.className = 'options';
+quiz.forEach((q, index) => {
+  const questionDiv = document.createElement('div');
+  questionDiv.className = 'question';
+  questionDiv.textContent = `${index + 1}. ${q.question}`;
 
-      q.options.forEach((opt, i) => {
-        const btn = document.createElement('button');
-        btn.textContent = opt;
-btn.onclick = () => {
-  const alreadyAnswered = Array.from(optionsDiv.children).some(b => b.disabled);
-  if (alreadyAnswered) return;
-  if (i === q.answer) {
-    btn.style.backgroundColor = '#072EF3';
-    score++;
-    scoreDisplay.textContent = `Correct answers (out of 15): ${score}`;
-  } else {
-    btn.style.backgroundColor = '#CD0101';
-    const correctBtn = optionsDiv.children[q.answer];
-    correctBtn.style.backgroundColor = '#039303';
-  }
-  Array.from(optionsDiv.children).forEach(b => b.disabled = true);
-  explanationDiv.textContent = q.explanation;
-};
-        optionsDiv.appendChild(btn);
-      });
+  const optionsDiv = document.createElement('div');
+  optionsDiv.className = 'options';
 
-      const explanationDiv = document.createElement('div');
-      explanationDiv.className = 'explanation';
+  q.options.forEach((opt, i) => {
+    const btn = document.createElement('button');
+    btn.textContent = opt;
+    btn.onclick = () => {
+      const alreadyAnswered = Array.from(optionsDiv.children).some(b => b.disabled);
+      if (alreadyAnswered) return;
 
-      questionDiv.appendChild(optionsDiv);
-      questionDiv.appendChild(explanationDiv);
-      quizDiv.appendChild(questionDiv);
-    });
-  </script>
+      if (i === q.answer) {
+        btn.style.backgroundColor = '#072EF3';
+        score++;
+        scoreDisplay.textContent = `Correct answers (out of 15): ${score}`;
+      } else {
+        btn.style.backgroundColor = '#CD0101';
+        const correctBtn = optionsDiv.children[q.answer];
+        correctBtn.style.backgroundColor = '#039303';
+      }
+
+      Array.from(optionsDiv.children).forEach(b => b.disabled = true);
+      explanationDiv.textContent = q.explanation;
+    };
+    optionsDiv.appendChild(btn);
+  });
+
+  const explanationDiv = document.createElement('div');
+  explanationDiv.className = 'explanation';
+
+  questionDiv.appendChild(optionsDiv);
+  questionDiv.appendChild(explanationDiv);
+  quizDiv.appendChild(questionDiv);
+});
+</script>
 </body>
 </html>
