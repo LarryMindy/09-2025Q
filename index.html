@@ -275,7 +275,7 @@ quiz.forEach((q, index) => {
       if (i === q.answer) {
         btn.style.backgroundColor = '#072EF3';
         score++;
-        scoreDisplay.textContent = `Correct answers (out of 15): ${score}`;
+        scoreDisplay.textContent = `${score} correct answers (out of 15)`;
       } else {
         btn.style.backgroundColor = '#CD0101';
         const correctBtn = optionsDiv.children[q.answer];
