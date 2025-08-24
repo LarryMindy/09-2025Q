@@ -10,39 +10,40 @@
     background: linear-gradient(to right, #9C2831, #9C2831);
     padding: 20px;
     color: #2c2c2c;
-}
-.language-switch {
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: black;
-  color: white;
-  border-radius: 20px;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 10px 0 20px 10px;
-}
-.language-switch:hover {
-  background-color: #444;
-}
-.quiz-container {
+  }
+  .language-switch {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px 0 20px 10px;
+  }
+  .language-switch:hover { background-color: #444; }
+
+  .quiz-container {
     max-width: 700px;
     margin:0 auto;
     background-color: #ffffff;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
-h2 {
+  }
+  h2 {
     text-align: center;
     font-size: 2em;
     color: #d35400;
-}
-.question {
+  }
+  .question {
     font-weight: bold;
     margin-top: 25px;
     font-size: 1.1em;
-}
-.options button {
+    /* Float-up animation on question block */
+    animation: floatUp 0.6s ease forwards;
+  }
+  .options button {
     display: block;
     color: white;
     margin: 8px 0;
@@ -54,79 +55,83 @@ h2 {
     cursor: pointer;
     transition: background-color 0.3s;
     font-size: 1.1em;
-}
-.options button:hover {
-    background-color: #C5B001;
-}
-.explanation {
+  }
+  .options button:hover { background-color: #C5B001; }
+
+  .explanation {
     color: #006400;
     margin-top: 10px;
     font-style: italic;
-}
-.banner {
+    opacity: 0; /* hidden until revealed */
+  }
+  /* When we add .show, explanation waits ~2s, then zooms in from the left */
+  .explanation.show {
+    animation: zoomInLeft 0.6s ease forwards;
+    animation-delay: 2s;
+  }
+
+  .banner {
     width: 100%;
     max-height: 200px;
     object-fit: cover;
     margin-bottom: 20px;
     border-radius: 8px;
-}
-#score {
-  position: sticky;
-  top: 0;
-  background-color: #FFFF00;
-  padding: 10px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.3em;
-  border-bottom: 2px solid #ccc;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  z-index: 1000;
-}
-.return-button {
-  display: block;
-  padding: 10px 20px;
-  background-color: #9C2831;
-  color: white;
-  border-radius: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 1em;
-  margin: 30px auto 20px;
-  text-align: center;
-  max-width: 400px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-.return-button:hover {
-  background-color: #b5303c;
-}
-.footer {
-  margin: 40px auto 0;
-  text-align: center;
-  font-size: 0.95em;
-  max-width: 768px;
-  color: #444;
-}
-.footer a {
-    color: #9C2831;
+  }
+  #score {
+    position: sticky;
+    top: 0;
+    background-color: #FFFF00;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+  .return-button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #9C2831;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
     text-decoration: none;
-}
-.footer a:hover {
-    text-decoration: underline;
-}
-@media screen and (max-width: 768px) {
-    .options button {
-       font-size: 1em;
-       padding: 14px;
-       line-height: 1.3;
-    }
+    font-size: 1em;
+    margin: 30px auto 20px;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  .return-button:hover { background-color: #b5303c; }
+
+  .footer {
+    margin: 40px auto 0;
+    text-align: center;
+    font-size: 0.95em;
+    max-width: 768px;
+    color: #444;
+  }
+  .footer a { color: #9C2831; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  @media screen and (max-width: 768px) {
+    .options button { font-size: 1em; padding: 14px; line-height: 1.3; }
     .return-button {
-      font-size: 0.9em;
-      padding: 12px 16px;
-      max-width: 90%;
-      margin: 20px auto;
-      text-align: center;
+      font-size: 0.9em; padding: 12px 16px; max-width: 90%;
+      margin: 20px auto; text-align: center;
     }
-}
+  }
+
+  /* ===== Animations ===== */
+  @keyframes floatUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes zoomInLeft {
+    from { opacity: 0; transform: translateX(-50px) scale(0.95); }
+    to   { opacity: 1; transform: translateX(0) scale(1); }
+  }
 </style>
 </head>
 
@@ -245,19 +250,28 @@ const quiz = [
     answer: 3,
     explanation: "Billy Joel’s ‘New York State of Mind’ is a love letter to his city, contrasting travel with staying home."
   },
-{
-  question: "Who wrote the song \"Country Road\"?",
-  options: ["James Taylor", "John Denver", "Jim Croce", "Cat Stevens"],
-  answer: 0,
-  explanation: "Not to be confused with John Denver's \"Take Me Home, Country Roads\", James Taylor's \"Country Road\" was inspired by his walks along Somerset Street in Belmont, Massachusetts, near the hospital where he was treated for depression. It captures themes of freedom, nature, solitude, and spirituality, and was also reminiscent of hitchhiking days in Martha's Vineyard for his friend and guitarist, Danny Kortchmar."
-}
+  {
+    question: "Who wrote the song \"Country Road\"?",
+    options: ["James Taylor", "John Denver", "Jim Croce", "Cat Stevens"],
+    answer: 0,
+    explanation: "Not to be confused with John Denver's \"Take Me Home, Country Roads\", James Taylor's \"Country Road\" was inspired by his walks along Somerset Street in Belmont, Massachusetts, near the hospital where he was treated for depression. It captures themes of freedom, nature, solitude, and spirituality, and was also reminiscent of hitchhiking days in Martha's Vineyard for his friend and guitarist, Danny Kortchmar."
+  }
 ];
 
 const quizDiv = document.getElementById('quiz');
 let score = 0;
 const scoreDisplay = document.getElementById('score');
 
-quiz.forEach((q, index) => {
+let currentIndex = 0;
+
+// Show exactly one question at a time
+function showQuestion(index) {
+  const q = quiz[index];
+
+  // Clear previous content so only one question is visible
+  quizDiv.innerHTML = '';
+
+  // Build question block
   const questionDiv = document.createElement('div');
   questionDiv.className = 'question';
   questionDiv.textContent = `${index + 1}. ${q.question}`;
@@ -265,13 +279,21 @@ quiz.forEach((q, index) => {
   const optionsDiv = document.createElement('div');
   optionsDiv.className = 'options';
 
+  // Explanation (hidden until answered; animation has 2s delay)
+  const explanationDiv = document.createElement('div');
+  explanationDiv.className = 'explanation';
+  explanationDiv.textContent = q.explanation;
+
   q.options.forEach((opt, i) => {
     const btn = document.createElement('button');
     btn.textContent = opt;
+
     btn.onclick = () => {
+      // Prevent multiple clicks
       const alreadyAnswered = Array.from(optionsDiv.children).some(b => b.disabled);
       if (alreadyAnswered) return;
 
+      // Color feedback + score
       if (i === q.answer) {
         btn.style.backgroundColor = '#072EF3';
         score++;
@@ -281,20 +303,37 @@ quiz.forEach((q, index) => {
         const correctBtn = optionsDiv.children[q.answer];
         correctBtn.style.backgroundColor = '#039303';
       }
-
       Array.from(optionsDiv.children).forEach(b => b.disabled = true);
-      explanationDiv.textContent = q.explanation;
+
+      // Reveal explanation with 2s delayed zoom-in-left
+      explanationDiv.classList.add('show');
+
+      // After the explanation has appeared (2.0s delay + 0.6s anim = ~2.6s), move on
+      const timeToNext = 2800; // a tiny buffer so the animation completes nicely
+      if (index + 1 < quiz.length) {
+        setTimeout(() => showQuestion(index + 1), timeToNext);
+      } else {
+        // Finished: leave the last explanation visible and show a gentle end note
+        setTimeout(() => {
+          const doneMsg = document.createElement('div');
+          doneMsg.style.marginTop = '20px';
+          doneMsg.style.fontWeight = 'bold';
+          doneMsg.textContent = 'All questions answered — nice job!';
+          quizDiv.appendChild(doneMsg);
+        }, timeToNext);
+      }
     };
+
     optionsDiv.appendChild(btn);
   });
-
-  const explanationDiv = document.createElement('div');
-  explanationDiv.className = 'explanation';
 
   questionDiv.appendChild(optionsDiv);
   questionDiv.appendChild(explanationDiv);
   quizDiv.appendChild(questionDiv);
-});
+}
+
+// Kick off with the first question on load
+showQuestion(currentIndex);
 </script>
 </body>
 </html>
