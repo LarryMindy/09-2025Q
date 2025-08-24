@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>60s & 70s Music Milestones Quiz</title>
+  <title>60s & 70s Music Journeys Quiz</title>
 <style>
   body {
     font-family: 'Calibri', sans-serif;
@@ -146,13 +146,13 @@
   <div class="quiz-container">
     <img src="September Quiz Banner.jpg" alt="September Quiz Banner" class="banner">
 
-<a href="https://larrymindy.github.io/08-2025QH/" class="language-switch" target="_blank" rel="noopener noreferrer">עברית</a>
+<a href="#" class="language-switch" target="_blank" rel="noopener noreferrer">עברית</a>
 
-    <h2>Larry and Mindy's August Quiz<br>
-      Musical Milestones of the 60s & 70s</h2>
-    <p id="score">Correct answers (out of 20): 0</p>
+    <h2>Larry and Mindy's September Quiz<br>
+      Musical Journeys of the 60s & 70s</h2>
+    <p id="score">Correct answers (out of 15): 0</p>
     <div id="quiz"></div>
-<a href="https://quiz.larrymindy.com/08-2025.php" class="return-button" target="_blank" rel="noopener noreferrer">
+<a href="https://quiz.larrymindy.com/09-2025.php" class="return-button" target="_blank" rel="noopener noreferrer">
   Back to the introduction page<br>and previous quizzes
 </a>
     <img src="divider H-C.jpg" alt="divider H-C.jpg" class="banner">
@@ -175,126 +175,96 @@
   <script>
  const quiz = [
   {
-    question: "Which iconic music festival, held in 1969, is often considered the pinnacle of the counterculture movement?",
-    options: ["Monterey Pop Festival", "Woodstock", "Isle of Wight Festival", "Altamont Free Concert"],
-    answer: 1,
-    explanation: "Woodstock featured legendary artists like Hendrix, Joplin, and The Who—it symbolized peace, music, and youth rebellion."
+    question: "Which U.S. state is the destination in the song “Take Me Home, Country Roads”?",
+    options: ['Tennessee', 'Kentucky', 'West Virginia', 'Virginia'],
+    answer: 2,
+    explanation: "John Denver’s classic celebrates West Virginia’s mountains and rural beauty—it became the state’s anthem."
   },
   {
-    question: "Which British band’s arrival in the United States in 1964 marked the beginning of the 'British Invasion'?",
-    options: ["The Rolling Stones", "The Beatles", "The Kinks", "The Who"],
-    answer: 1,
-    explanation: "The Beatles' appearance on The Ed Sullivan Show sparked a musical revolution across America."
-  },
-  {
-    question: "Which 1970 album by The Beatles is often referred to as their 'final' album, despite being recorded before 'Abbey Road'?",
-    options: ["Revolver", "Let It Be", "Sgt. Pepper's", "The White Album"],
-    answer: 1,
-    explanation: "Let It Be was released after the band had broken up—its title song and bittersweet tone made it their swan song."
-  },
-  {
-    question: "Which band released the concept album 'Tommy' in 1969, later adapted into a rock opera film?",
-    options: ["The Who", "Pink Floyd", "Genesis", "King Crimson"],
+    question: "Which Beatles song begins with the line “Flew in from Miami Beach BOAC”?",
+    options: ['Back in the U.S.S.R.', 'Come Together', 'Ticket to Ride', 'Day Tripper'],
     answer: 0,
-    explanation: "The Who’s Tommy introduced the world to the ‘deaf, dumb and blind’ pinball wizard—blending storytelling with rock."
+    explanation: "‘Back in the U.S.S.R.’ opens The White Album with a parody of Chuck Berry and the Beach Boys."
   },
   {
-    question: "Who wrote “Me and Bobby McGee”?",
-    options: ["Janis Joplin", "Willie Nelson", "Kris Kristofferson", "Johnny Cash"],
-    answer: 2,
-    explanation: "Kris Kristofferson penned the song—Janis Joplin’s iconic version was released posthumously and became a #1 hit."
-  },
-  {
-    question: "Which 1967 album by The Velvet Underground was produced by Andy Warhol and initially sold poorly but became hugely influential?",
-    options: ["Loaded", "White Light/White Heat", "The Velvet Underground & Nico", "Transformer"],
-    answer: 2,
-    explanation: "Featuring the famous banana cover, 'The Velvet Underground & Nico' inspired countless future musicians despite initial obscurity."
-  },
-  {
-    question: "Which Bob Dylan album marked his controversial shift from acoustic folk to electric rock?",
-    options: ["The Freewheelin’ Bob Dylan", "Bringing It All Back Home", "Highway 61 Revisited", "Blonde on Blonde"],
+    question: "What Simon & Garfunkel song mentions traveling on a Greyhound bus?",
+    options: ['The Boxer', 'America', 'Homeward Bound', 'Cecilia'],
     answer: 1,
-    explanation: "Side A of 'Bringing It All Back Home' shocked folk purists—it featured electric backing and bold new sonic terrain."
+    explanation: "Paul Simon wrote ‘America’ as a metaphor for searching meaning—its Greyhound bus journey is literal and symbolic."
   },
   {
-    question: "Which soul artist was known as the 'Godfather of Soul' and released the politically charged song 'Say It Loud – I’m Black and I’m Proud' in 1968?",
-    options: ["Curtis Mayfield", "James Brown", "Gil Scott-Heron", "Isaac Hayes"],
-    answer: 1,
-    explanation: "James Brown blended funk and activism—this song became a powerful anthem during the Civil Rights Movement."
-  },
-  {
-    question: "Which 1973 Pink Floyd album spent over 900 weeks on the Billboard 200 chart?",
-    options: ["Wish You Were Here", "The Wall", "Meddle", "The Dark Side of the Moon"],
-    answer: 3,
-    explanation: "With timeless themes and sonic innovation, 'The Dark Side of the Moon' became one of the most celebrated albums in history."
-  },
-  {
-    question: "Which 1975 Bruce Springsteen album featured the song 'Tenth Avenue Freeze-Out'?",
-    options: ["Born to Run", "The River", "Darkness on the Edge of Town", "Greetings from Asbury Park, N.J."],
+    question: "Jimmy Webb wrote a song for Glen Campbell featuring a telephone-wire technician. Which city did the technician work in (and around)?",
+    options: ['Wichita, Kansas', 'Tulsa, Oklahoma', 'Amarillo, Texas', 'Des Moines, Iowa'],
     answer: 0,
-    explanation: "‘Tenth Avenue Freeze-Out’ from 'Born to Run' immortalized the formation of the E Street Band and Springsteen’s breakout."
+    explanation: "Jimmy Webb’s ‘Wichita Lineman’ immortalized a lonely technician in Kansas, blending country with orchestral pop."
   },
   {
-    question: "Which artist wrote the protest song 'Ohio' in response to the Kent State shootings in 1970?",
-    options: ["Bob Dylan", "Neil Young", "Crosby, Stills & Nash", "Buffalo Springfield"],
+    question: "Which song by The Beach Boys celebrates driving across America in a custom car, with car parts described?",
+    options: ['I Get Around', 'Surfin’ U.S.A.', 'Little Deuce Coupe', 'Fun, Fun, Fun'],
+    answer: 2,
+    explanation: "‘Little Deuce Coupe’ is the Beach Boys’ ode to a souped‑up Ford hot rod—pure car culture in song."
+  },
+  {
+    question: "What song by Neil Diamond includes the lyric “LA’s fine, the sun shines most the time”?",
+    options: ['Cracklin’ Rosie', 'I Am... I Said', 'Sweet Caroline', 'Song Sung Blue'],
     answer: 1,
-    explanation: "Neil Young composed 'Ohio' just days after the tragedy—it was recorded immediately by CSNY and released within weeks."
+    explanation: "‘I Am... I Said’ reflects Neil Diamond’s homesickness and career struggles while living in Los Angeles."
   },
   {
-    question: "Which 1971 Cat Stevens album featured the hits “Moonshadow” and “Peace Train”?",
-    options: ["Teaser and the Firecat", "Catch Bull at Four", "Mona Bone Jakon", "Tea for the Tillerman"],
+    question: "Which song by Johnny Cash lists dozens of cities he’s been to (over 90 cities!)?",
+    options: ['Riders in the Sky', 'I’ve Been Everywhere', 'I Walk the Line', 'A Boy Named Sue'],
+    answer: 1,
+    explanation: "Johnny Cash’s cover of ‘I’ve Been Everywhere’ rattles off nearly 100 towns in rapid‑fire storytelling style."
+  },
+  {
+    question: "Who wrote the song “City of New Orleans”, describing a train ride from Chicago to New Orleans on the Illinois Central Railroad?",
+    options: ['Arlo Guthrie', 'Willie Nelson', 'Steve Goodman', 'Johnny Cash'],
+    answer: 2,
+    explanation: "Steve Goodman wrote ‘City of New Orleans’—Arlo Guthrie popularized it; it became a folk‑country standard."
+  },
+  {
+    question: "What song by The Doors includes the lyric “Well, I woke up this mornin' / And I got myself a beer / The future's uncertain / And the end is always near” and evokes a road trip vibe?",
+    options: ['Been Down So Long', 'Riders on the Storm', 'L.A. Woman', 'Roadhouse Blues'],
+    answer: 3,
+    explanation: "‘Roadhouse Blues’ by The Doors is a gritty anthem of freedom and unpredictability on the open road."
+  },
+  {
+    question: "Sung by Gordon Lightfoot, where is "The Wreck of the Edmund Fitzgerald"?",
+    options: ['Atlantic Ocean', 'Lake Superior', 'Hudson Bay', 'Gulf of St. Lawrence'],
+    answer: 1,
+    explanation: "Gordon Lightfoot told the true story of the Edmund Fitzgerald sinking on Lake Superior in 1975."
+  },
+  {
+    question: "What song by Led Zeppelin includes references to traveling “on a midnight sun” and “the land of the ice and snow”?",
+    options: ['Kashmir', 'Immigrant Song', 'Ramble On', 'Over the Hills and Far Away'],
+    answer: 1,
+    explanation: "Led Zeppelin’s ‘Immigrant Song’ evokes Viking voyages with its references to northern lands and conquest."
+  },
+  {
+    question: "What song sung by Janis Joplin talks about hitchhiking?",
+    options: ['Piece of My Heart', 'Me and Bobby McGee', 'Cry Baby', 'Summertime'],
+    answer: 1,
+    explanation: "Janis Joplin’s ‘Me and Bobby McGee’ captures a free‑spirited road romance; it became her signature hit."
+  },
+  {
+    question: "What song by The Band includes the lyric “Was feeling 'bout half past dead / I just need someplace / Where I can lay my head” and depicts the travels of a man through Nazareth, Pennsylvania?",
+    options: ['The Night They Drove Old Dixie Down', 'Life Is a Carnival', 'The Weight', 'Up on Cripple Creek'],
+    answer: 2,
+    explanation: "The Band’s ‘The Weight’ narrates a traveler’s encounters in Nazareth, Pennsylvania—an allegory of burden and grace."
+  },
+  {
+    question: "What song by Billy Joel includes references to traveling through the Bronx and Long Island?",
+    options: ['Piano Man', 'Movin’ Out (Anthony’s Song)', 'Scenes from an Italian Restaurant', 'New York State of Mind'],
+    answer: 3,
+    explanation: "Billy Joel’s ‘New York State of Mind’ is a love letter to his city, contrasting travel with staying home."
+  },
+  {
+    question: "Who wrote the song "Walking on a Country Road"?",
+    options: ['James Taylor', 'John Denver', 'Jim Croce', 'Cat Stevens'],
     answer: 0,
-    explanation: "'Teaser and the Firecat' showcased Stevens' uplifting spiritual and melodic songwriting at its peak."
+    explanation: "John Denver’s ‘Walking on a Country Road’ celebrates simplicity, nature, and the peaceful escape of rural life."
   },
-  {
-    question: "Which of Jim Croce's albums were released after he died?",
-    options: ["Facets", "You Don't Mess Around with Jim", "Life and Times", "I Got a Name"],
-    answer: 3,
-    explanation: "Croce died just before the release of 'I Got a Name' in 1973—its title track became a legacy-defining anthem."
-  },
-  {
-    question: "Don McLean recorded a song called 'Sunshine Life for Me (Sail Away Raymond)' Who wrote it?",
-    options: ["Don McLean", "John Lennon", "George Harrison", "Paul McCartney"],
-    answer: 2,
-    explanation: "George Harrison wrote the folk-infused track—it appeared on Ringo Starr’s album and captured a playful nautical vibe."
-  },
-  {
-    question: "What recurring theme in John Denver’s “Calypso” reflects his commitment to environmentalism?",
-    options: ["Forest protection", "Biodiversity", "Solar energy", "Love of the sea"],
-    answer: 3,
-    explanation: "This song is about the ship Calypso, which was bought by Jacques-Yves Cousteau and converted to an oceanographic ship."
-  },
-  {
-    question: "Arlo Guthrie’s “Alice’s Restaurant” became a protest anthem during which U.S. military conflict?",
-    options: ["Korean War", "Vietnam War", "Gulf War", "WWII"],
-    answer: 1,
-    explanation: "This song reflected the attitude of many young people in America at the time (released October, 1967). It was considered an antiwar song, but unlike most protest songs, it used humor to speak out against authority."
-  },
-  {
-    question: "Which Joni Mitchell song from the album “Blue” was written about her breakup with Graham Nash and her feelings about giving up a daughter for adoption?",
-    options: ["Carey", "River", "A Case of You", "Little Green"],
-    answer: 3,
-    explanation: "'Little Green' is a deeply personal track—Mitchell’s lyrical honesty helped redefine emotional transparency in songwriting."
-  },
-  {
-    question: "Carole King wrote “(You Make Me Feel Like) A Natural Woman” for which artist?",
-    options: ["The Shirelles", "Aretha Franklin", "Etta James", "Carole King intended to sing it herself."],
-    answer: 1,
-    explanation: "King co-wrote the song for Aretha Franklin at producer Jerry Wexler’s request—it became one of Franklin’s signature hits."
-  },
-  {
-    question: "Jackson Browne’s 'The Pretender' was shaped by the death of which close person in his life?",
-    options: ["His mother", "His brother", "His wife", "His producer"],
-    answer: 2,
-    explanation: "Written after the passing of his wife Phyllis Major, the song grapples with resilience and disillusionment in modern life."
-  },
-  {
-    question: "Dan Fogelberg’s 'Leader of the Band' is a tribute to whom?",
-    options: ["His first music teacher", "His father", "His brother", "His childhood idol"],
-    answer: 1,
-    explanation: "Fogelberg’s moving ballad honors his father, Lawrence, a musician and bandleader who instilled in him a lifelong love of music."
-  }
-];
+ ];
     // ✅ Rendering logic
     const quizDiv = document.getElementById('quiz');
 let score = 0;
@@ -311,26 +281,18 @@ const scoreDisplay = document.getElementById('score');
         const btn = document.createElement('button');
         btn.textContent = opt;
 btn.onclick = () => {
-  // If question already answered, do nothing
   const alreadyAnswered = Array.from(optionsDiv.children).some(b => b.disabled);
   if (alreadyAnswered) return;
-
-  // If correct on first try
   if (i === q.answer) {
-    btn.style.backgroundColor = '#072EF3'; // 💚 First-guess correct (light green)
+    btn.style.backgroundColor = '#072EF3';
     score++;
-    scoreDisplay.textContent = `Correct answers (out of 20): ${score}`;
+    scoreDisplay.textContent = `Correct answers (out of 15): ${score}`;
   } else {
-    btn.style.backgroundColor = '#CD0101'; // ❌ Wrong answer (light red)
-
-    // Highlight correct answer in softer green after wrong guess
+    btn.style.backgroundColor = '#CD0101';
     const correctBtn = optionsDiv.children[q.answer];
-    correctBtn.style.backgroundColor = '#039303'; // 🟩 Revealed correct (sage green, for example)
+    correctBtn.style.backgroundColor = '#039303';
   }
-
-  // Disable all buttons
   Array.from(optionsDiv.children).forEach(b => b.disabled = true);
-
   explanationDiv.textContent = q.explanation;
 };
         optionsDiv.appendChild(btn);
