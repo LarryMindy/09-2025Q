@@ -268,10 +268,7 @@ let currentIndex = 0;
 function showQuestion(index) {
   const q = quiz[index];
 
-  // Clear previous content so only one question is visible
-  quizDiv.innerHTML = '';
-
-  // Build question block
+// Build question block
   const questionDiv = document.createElement('div');
   questionDiv.className = 'question';
   questionDiv.textContent = `${index + 1}. ${q.question}`;
