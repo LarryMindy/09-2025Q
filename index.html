@@ -100,18 +100,23 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
       animation: floatUp 0.6s ease forwards;
     }
-    .back-button {
-      display: none;
-      margin: 20px auto;
-      padding: 12px 24px;
-      font-size: 1em;
-      background-color: #9C2831;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      animation: slideFadeIn 0.6s ease forwards;
-    }
+   .back-button {
+  background-color: #a02b2b;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.back-button:hover {
+  box-shadow: 0 0 12px 4px rgba(193, 60, 60, 0.6); /* red glow */
+  transform: scale(1.05);
+}
     @keyframes slideFadeIn {
       0% { opacity: 0; transform: translateY(20px); }
       100% { opacity: 1; transform: translateY(0); }
@@ -330,9 +335,9 @@ function showQuestion(index) {
           const backBtn = document.createElement('button');
           backBtn.className = 'back-button';
           backBtn.innerHTML = 'Back to the introduction page<br>and previous quizzes...';
-          backBtn.onclick = () => {
-            window.location.href = 'https://quiz.larrymindy.com/09-2025.php';
-          };
+          backBtn.onclick = function () {
+             window.open('https://quiz.larrymindy.com/09-2025.php', '_blank');
+        };
           backBtn.style.display = 'block';
           quizDiv.appendChild(backBtn);
         }, timeToNext);
